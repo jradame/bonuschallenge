@@ -1,142 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-roboto {
+body {
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings:
-    "width" 100;
 }
+
+.purple {
+	color: purple;
+  }
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+	padding: 80;
+}
+
+.row__narrow {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 48px;
+  }
+  
 
 /* top nav bar */
 
-/* row layout */
-.row {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px 32px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
-  
-  /* nav */
-  nav {
-	background-color: white;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .nav__logo {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-  }
-  
-  .nav__logo--img {
-	width: 36px;
-	height: 36px;
-  }
-  
-  .nav__logo--title {
-	font-size: 20px;
-	font-weight: 800;
-	color: black;
-  }
-  
-  /* nav links */
-  .nav__links {
-	display: flex;
-	align-items: center;
-	gap: 24px;
-  }
-  
-  .nav__link {
-	color: black;
-	text-decoration: none;
-	font-weight: 600;
-	transition: color 0.3s ease;
-  }
-  
-  .nav__link:hover {
-	color: grey;
-  }
-  
-  /* sign up button */
-  .nav__link--primary {
-	background-color: #7c3aed; /* purple */
-	color: white ;
-	padding: 8px 20px;
-	border-radius: 9999px;
-	font-weight: 700;
-	transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .nav__link--primary:hover {
-	background-color: #6b21a8;
-	transform: translateY(-1px);
-  }
+/* nav */
+nav {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
-  /* landing section */
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__logo--img {
+  width: 36px;
+  height: 36px;
+}
+
+.nav__logo--title {
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+
+/* nav links */
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__link {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: grey;
+}
+
+/* sign UP button */
+.nav__link--primary {
+  background-color: #7c3aed; /* purple */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav__link--primary:hover {
+  background-color: #6b21a8;
+  transform: translateY(-1px);
+}
+
+/* landing section */
 .landing__content {
-	padding: 100px 20px;
+  padding: 100px 20px;
+}
+
+.landing__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* left side text */
+.landing__left {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landing__left h1 {
+  max-width: 500px;
+  font-size: 48px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.landing__left p {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.header__email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto 0;
+  background-color: white;
+  padding: 8px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 2px solid #7c3aed;
+}
+
+/* Email Input + ButtoN */
+.header__email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 40px auto 0;
+  background-color: white;
+  padding: 4px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header__email--input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 9999px;
+}
+
+.header__email--btn {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header__email--input::placeholder {
+  color: #a0aec0;
+  font-weight: 500;
+}
+
+.header__email--btn:hover {
+  background-color: #5b21b6;
+  transform: translateY(-2px);
+}
+
+.header__customers {
+  padding: 60px 20px;
+}
+
+.header__customers .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header__customers--title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #4a4a4a;
+  margin-bottom: 12px;
+}
+
+.header__img {
+  max-width: 100%;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* right side image */
+.landing__right {
+  flex: 0 0 60%;
+}
+
+.landing__img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Features Section Container */
+#features .container {
+	padding: 80px 0;
   }
   
-  .landing__row {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+ 
+  .features {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
 	gap: 40px;
+	justify-content: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px; /* tighter on sides */
   }
   
-  /* left side text */
-  .landing__left {
-	flex: 0 0 40%;
+  
+  /* Feature Block */
+  .feature {
+	flex: 1 1 calc(33.333% - 27px); 
+	display: flex;
   }
   
-  .landing__left h1 {
-	font-size: 48px;
-	color: black;
-	margin-bottom: 20px;
+  /* feature row */
+  .feature__row {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
   }
   
-  .landing__left p {
-	font-size: 18px;
-	color: #4a4a4a;
-	margin-bottom: 30px;
+  /* Image wrapper */
+  .feature__img--wrapper {
+	width: 48px;
+	height: 48px;
+	flex-shrink: 0;
   }
   
-  /* right side image if i can find one */
-  .landing__right {
-	flex: 0 0 60%;
-  }
-  
-  .landing__img {
+  .feature__img {
 	width: 100%;
 	height: auto;
-	border-radius: 12px;
   }
   
-  /* button style */
-  .btn {
-	display: inline-block;
-	padding: 12px 32px;
-	background-color: #7c3aed;
-	color: white;
+  /* Feature text */
+  .feature__title {
 	font-size: 18px;
-	font-weight: 600;
-	border-radius: 30px;
-	text-decoration: none;
-	transition: background-color 300ms ease, transform 300ms ease;
+	font-weight: 700;
+	margin-bottom: 8px;
+	color: #1a202c;
   }
   
-  .btn:hover {
-	background-color: #5b21b6;
-	transform: translateY(-2px);
+  .feature__para {
+	font-size: 16px;
+	color: #4a4a4a;
   }
-
-
-  
   
