@@ -891,7 +891,7 @@ nav {
 }
 
 /* ========= RESPONSIVE MEDIA QUERIES ========= */
-/* ========= CLEANED RESPONSIVE MEDIA QUERIES ========= */
+
 @media (max-width: 900px) {
 	.testimonials-section {
 	  flex-direction: column;
